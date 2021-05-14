@@ -24,11 +24,11 @@
             }
             .body--ready {
               /* ;修改背景颜色*/
-				background: -webkit-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(255, 90, 70) 120%);
-                background: -moz-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
-                background: -o-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
-                background: -ms-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
-                background: linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+				background: -webkit-linear-gradient(top, rgb(255, 240, 245) 0%, rgb(255, 90, 70) 120%);
+                background: -moz-linear-gradient(top, rgb(255, 240, 245) 0%, rgb(255, 90, 70) 120%);
+                background: -o-linear-gradient(top, rgb(255, 240, 245) 0%, rgb(255, 90, 70) 120%);
+                background: -ms-linear-gradient(top, rgb(255, 240, 245) 0%, rgb(255, 90, 70) 120%);
+                background: linear-gradient(top, rgb(255, 240, 245) 0%, rgb(255, 90, 70) 120%);
             }
             .text {
                 position: fixed;
@@ -96,7 +96,8 @@
     </div>
     <canvas class="canvas" width="1820" height="905"></canvas>
     <p class="text" style="color: #FFFAFA;">我们已经相伴了
-    <span id="span_dt_dt"></span><br>你的男朋友QMQ😘
+    <span id="span_dt_dt1"></span><br>今天是第
+    <span id="span_dt_dt2"></span><br>你的男朋友QMQ😘
     </p>
     <script language="javascript">
         function show_date_time() {
@@ -114,7 +115,8 @@
             e_minsold = (e_hrsold - hrsold) * 60;
             minsold = Math.floor((e_hrsold - hrsold) * 60);
             seconds = Math.floor((e_minsold - minsold) * 60);
-            span_dt_dt.innerHTML = daysold + " 天 " + hrsold + " 小时 " + minsold + " 分 " + seconds + " 秒 ";
+            span_dt_dt1.innerHTML = daysold + " 天 " + hrsold + " 小时 " + minsold + " 分 " + seconds + " 秒 ";
+			span_dt_dt2.innerHTML = daysold+1+ " 天 ";
         }
         show_date_time();
     </script>
